@@ -1,0 +1,31 @@
+text <- "R Programming Language"
+
+cat("Original:", text, "\n")
+
+upper <- toupper(text)
+cat("Uppercase:", upper, "\n")
+
+lower <- tolower(text)
+cat("Lowercase:", lower, "\n")
+
+len <- nchar(text)
+cat("Length:", len, "\n")
+
+part <- substr(text, 1, 12)
+cat("Substring:", part, "\n")
+
+replace <- gsub("R", "Python", text)
+cat("Replaced:", replace, "\n")
+
+words <- strsplit(text, " ")[[1]]
+cat("Number of words:", length(words), "\n")
+print(words)
+
+joined <- paste("Data", "Science")
+cat("Joined string:", joined, "\n")
+
+trimmed <- trimws("  R Programming  ")
+cat("Trimmed:", trimmed, "\n")
+
+found <- grepl("Programming", text)
+cat("Pattern found:", found, "\n")
