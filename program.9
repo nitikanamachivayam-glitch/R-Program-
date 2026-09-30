@@ -1,0 +1,34 @@
+products <- c(
+  "Pen",
+  "Book",
+  "Pencil",
+  "Bag"
+)
+
+sales <- c(
+  20,
+  35,
+  15,
+  30
+)
+
+total <- sum(sales)
+
+cat("PRODUCT SALES\n")
+print(data.frame(products, sales))
+
+cat("Total sales:", total, "\n")
+
+pie(
+  sales,
+  labels = products,
+  main = "Product Sales Pie Chart"
+)
+
+barplot(
+  sales,
+  names.arg = products,
+  main = "Product Sales Bar Chart",
+  xlab = "Products",
+  ylab = "Sales"
+)
