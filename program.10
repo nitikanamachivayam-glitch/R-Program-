@@ -1,0 +1,23 @@
+students <- data.frame(
+  Name = c("A","B","C","D","E"),
+  Marks = c(72,85,90,65,78)
+)
+
+cat("STUDENT DATA\n")
+print(students)
+
+mean_marks <- mean(students$Marks)
+median_marks <- median(students$Marks)
+sd_marks <- sd(students$Marks)
+
+min_marks <- min(students$Marks)
+max_marks <- max(students$Marks)
+
+cat("\nMean:", mean_marks, "\n")
+cat("Median:", median_marks, "\n")
+cat("Standard Deviation:", sd_marks, "\n")
+cat("Minimum:", min_marks, "\n")
+cat("Maximum:", max_marks, "\n")
+
+cat("\nSUMMARY\n")
+print(summary(students$Marks))
