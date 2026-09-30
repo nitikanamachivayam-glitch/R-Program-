@@ -1,0 +1,30 @@
+student1 <- data.frame(
+  ID = c(1,2,3),
+  Name = c("Arun","Bala","Cathy")
+)
+
+marks <- data.frame(
+  Marks = c(75,82,90),
+  Grade = c("B","A","A")
+)
+
+cat("FIRST DATA FRAME\n")
+print(student1)
+
+cat("\nSECOND DATA FRAME\n")
+print(marks)
+
+column_data <- cbind(student1, marks)
+
+cat("\nAFTER CBIND()\n")
+print(column_data)
+
+student2 <- data.frame(
+  ID = c(4,5),
+  Name = c("Dinesh","Esha")
+)
+
+row_data <- rbind(student1, student2)
+
+cat("\nAFTER RBIND()\n")
+print(row_data)
