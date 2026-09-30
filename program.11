@@ -1,0 +1,26 @@
+factorial_fun <- function(n) {
+  
+  if (n == 0) {
+    return(1)
+  }
+  
+  if (n == 1) {
+    return(1)
+  }
+  
+  result <- n * factorial_fun(n - 1)
+  
+  return(result)
+}
+
+num <- as.integer(
+  readline("Enter a number: ")
+)
+
+if (num < 0) {
+  cat("Negative number is not allowed\n")
+} else {
+  answer <- factorial_fun(num)
+  cat("Number:", num, "\n")
+  cat("Factorial:", answer, "\n")
+}
