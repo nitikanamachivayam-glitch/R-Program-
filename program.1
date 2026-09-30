@@ -1,0 +1,21 @@
+convert_temperature <- function() {
+  cat("TEMPERATURE CONVERTER\n")
+  cat("1. Celsius to Fahrenheit\n")
+  cat("2. Fahrenheit to Celsius\n")
+  choice <- as.integer(readline("Enter choice: "))
+  
+  if (choice == 1) {
+    c <- as.numeric(readline("Enter Celsius: "))
+    f <- (c * 9/5) + 32
+    cat("Celsius:", c, "\n")
+    cat("Fahrenheit:", f, "\n")
+  } else if (choice == 2) {
+    f <- as.numeric(readline("Enter Fahrenheit: "))
+    c <- (f - 32) * 5/9
+    cat("Fahrenheit:", f, "\n")
+    cat("Celsius:", round(c, 2), "\n")
+  } else {
+    cat("Invalid choice\n")
+  }
+}
+convert_temperature()
