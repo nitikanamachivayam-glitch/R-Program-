@@ -1,0 +1,27 @@
+students <- data.frame(
+  Name = c("Arun","Banu","Celine","David"),
+  Marks = c(70,85,92,78)
+)
+
+write.csv(
+  students,
+  "student_marks.csv",
+  row.names = FALSE
+)
+
+cat("CSV file created successfully\n")
+
+data <- read.csv("student_marks.csv")
+
+cat("\nDATA FROM CSV FILE\n")
+print(data)
+
+total <- sum(data$Marks)
+average <- mean(data$Marks)
+highest <- max(data$Marks)
+lowest <- min(data$Marks)
+
+cat("\nTotal:", total, "\n")
+cat("Average:", average, "\n")
+cat("Highest:", highest, "\n")
+cat("Lowest:", lowest, "\n")
