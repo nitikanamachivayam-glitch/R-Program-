@@ -1,0 +1,29 @@
+numbers <- c(10,20,30,40,50)
+
+cat("VECTOR\n")
+print(numbers)
+
+names <- c("Anu","Bala","Cathy")
+
+cat("\nNAME VECTOR\n")
+print(names)
+
+student <- list(
+  Name = "Anu",
+  Age = 20,
+  Marks = numbers
+)
+
+cat("\nLIST\n")
+print(student)
+
+students <- data.frame(
+  Name = c("Anu","Bala","Cathy"),
+  Age = c(20,21,20),
+  Marks = c(80,75,90)
+)
+
+cat("\nDATA FRAME\n")
+print(students)
+
+cat("\nAverage Marks:", mean(students$Marks), "\n")
