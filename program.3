@@ -1,0 +1,20 @@
+find_even <- function(n) {
+  even <- c()
+  
+  for (i in 1:n) {
+    if (i %% 2 == 0) {
+      even <- c(even, i)
+    }
+  }
+  
+  return(even)
+}
+
+n <- as.integer(readline("Enter the value of N: "))
+
+result <- find_even(n)
+
+cat("Even numbers from 1 to", n, "are:\n")
+print(result)
+
+cat("Total even numbers:", length(result), "\n")
