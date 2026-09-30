@@ -1,0 +1,29 @@
+n <- as.integer(
+  readline("Enter number of elements: ")
+)
+
+numbers <- numeric(n)
+
+cat("Enter the numbers:\n")
+
+for (i in 1:n) {
+  numbers[i] <- as.integer(readline())
+}
+
+even_count <- 0
+odd_count <- 0
+
+for (x in numbers) {
+  if (x %% 2 == 0) {
+    even_count <- even_count + 1
+  } else {
+    odd_count <- odd_count + 1
+  }
+}
+
+cat("\nEntered Array:\n")
+print(numbers)
+
+cat("Even numbers:", even_count, "\n")
+cat("Odd numbers:", odd_count, "\n")
+cat("Total numbers:", n, "\n")
