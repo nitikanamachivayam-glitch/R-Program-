@@ -1,0 +1,20 @@
+print_squares <- function(start, end) {
+  cat("SQUARES OF NUMBERS\n")
+  
+  if (start > end) {
+    cat("Invalid range\n")
+    return()
+  }
+  
+  for (i in start:end) {
+    square <- i^2
+    cat("Number:", i, "\n")
+    cat("Square:", square, "\n")
+    cat("----------------\n")
+  }
+}
+
+start <- as.integer(readline("Enter starting number: "))
+end <- as.integer(readline("Enter ending number: "))
+
+print_squares(start, end)
