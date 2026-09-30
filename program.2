@@ -1,0 +1,31 @@
+rectangle <- function(length, width) {
+  area <- length * width
+  return(area)
+}
+
+square <- function(side) {
+  area <- side * side
+  return(area)
+}
+
+circle <- function(radius) {
+  area <- pi * radius^2
+  return(area)
+}
+
+triangle <- function(base, height) {
+  area <- 0.5 * base * height
+  return(area)
+}
+
+l <- 12
+w <- 5
+s <- 8
+r <- 4
+b <- 10
+h <- 6
+
+cat("Rectangle Area:", rectangle(l,w), "\n")
+cat("Square Area:", square(s), "\n")
+cat("Circle Area:", round(circle(r),2), "\n")
+cat("Triangle Area:", triangle(b,h), "\n")
