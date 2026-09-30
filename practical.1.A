@@ -1,0 +1,11 @@
+even_squares <- function(N) {
+  for(i in 1:N) {
+    if(i %% 2 == 0) {
+      square <- i^2
+      print(square)
+    }
+  }
+}
+
+N <- as.integer(readline("Enter N: "))
+even_squares(N)
