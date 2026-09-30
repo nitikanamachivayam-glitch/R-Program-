@@ -1,0 +1,31 @@
+# Program to find the size of a question list
+
+# Create a list of questions
+questions <- list(
+  "Question 1",
+  "Question 2",
+  "Question 3",
+  "Question 4",
+  "Question 5",
+  "Question 6",
+  "Question 7",
+  "Question 8"
+)
+
+# Display the question list
+print(questions)
+
+# Find the number of elements
+size <- length(questions)
+
+# Display the size
+cat("Number of questions:", size, "\n")
+
+# Check whether the list is empty
+if(size > 0) {
+  cat("The question list is ready.\n")
+} else {
+  cat("The question list is empty.\n")
+}
+
+# End of program
